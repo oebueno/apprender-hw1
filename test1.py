@@ -142,7 +142,7 @@ def areaOfBookshelf():
 	length = 1
 	width = 2
 	return length * width
-print (areaOfBookshelf())
+# print (areaOfBookshelf())
 # Syntax vs Semantics
 # Syntax error because you forgot the colon after the function definition
 # def areaOfBookshelf()
@@ -160,6 +160,22 @@ print (areaOfBookshelf())
 # print (areaOfBookshelf())
 
 # Build a tool that converts Celsius to Fahrenheit or Fahrenheit to Celsius
+def celsiusToFahrenheit(C):
+	return ((C*1.8)+32)
+#print (celsiusToFahrenheit(30))
+def fahrenheitToCelsius(F):
+	return (F-32)*0.5556
+#print (fahrenheitToCelsius(86))
+temperatureType = raw_input("What temperature type do you want to convert to? ('F' for Fahrenheit or 'C' for Celsius) ")
+if (temperatureType == "C"):
+	celsiusDegrees = input("What's the temperature?")
+	print (celsiusToFahrenheit(celsiusDegrees))
+	
+elif (temperatureType == "F"):
+	fahrenheitDegrees = input("What's the temperature?")
+	print (fahrenheitToCelsius(fahrenheitDegrees))
+else: 
+	print('You can only choose between "C" and "F"')
 
 
 # Convention vs Syntax 
