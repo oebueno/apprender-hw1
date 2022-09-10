@@ -12,7 +12,7 @@ def div ( a, b):
 
 def subtraction ( a, b ):
 	return a - b
-
+# a = 75 
 # def isJairHappy(a):
 # 	if a >= 75:
 # 		return True
@@ -28,7 +28,13 @@ def subtraction ( a, b ):
 # else:
 # 	print ("Jair is not happy")
 
+studentName = "Laura"
 
+print( studentName + " is a student")
+
+# f(x) = x + 1
+
+# f(2) = 2 + 1 = 3
 
 # OscarsScore = 7
 
@@ -73,9 +79,9 @@ def subtraction ( a, b ):
 
 #Primitive Datatypes [Consideration: Size and Type]
 
-##Whole Numbers
-#integer: expressed as int ( Negative or positive WHOLE numbers) (4 bytes: -2,147,483,648 to 2,147,483,647)
-#long integer: expressed as long ( Negative or positive WHOLE numbers) ( 8 bytes: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+##Whole Numbers (Java)
+#integer: expressed as int ( Negative or positive WHOLE numbers) (4 bytes-> 32 bits -> 2^32 : -2,147,483,648 to 2,147,483,647)
+#long integer: expressed as long ( Negative or positive WHOLE numbers) ( 8 bytes -> 64 bits -> 2^64 : -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
 #unsigned integer: expressed as unsigned int ( POSITIVE WHOLE NUMBERS) (4 bytes: 0 to 4,294,967,295 )
 #unsigned long: expressed as unsigned long ( POSITIVE WHOLE NUMBERS ) ( 8 bytes: 0 to 18,446,744,073,709,551,616)
 ##Decimals 
@@ -85,7 +91,7 @@ def subtraction ( a, b ):
 # character: char
 # string of characters: String
 ##Logical Values
-#boolean
+#boolean 2^1 = 2 = 0,  1
 
 #Operators
 ##Relational
@@ -122,8 +128,6 @@ def subtraction ( a, b ):
 # def printHello(self):
 # 	print("World")
 
-this_is_your_number = "8"
-
 #Naming Conventions
 #CASES
 #Camel Case: thisIsHowYouNameThings (Functions or Methods or Variables)
@@ -159,7 +163,7 @@ def areaOfBookshelf():
 # 	return length + width
 # print (areaOfBookshelf())
 
-# Build a tool that converts Celsius to Fahrenheit or Fahrenheit to Celsius
+# Build a tool that allows a user to convert Celsius to Fahrenheit or Fahrenheit to Celsius
 def celsiusToFahrenheit(C):
 	return ((C*1.8)+32)
 #print (celsiusToFahrenheit(30))
