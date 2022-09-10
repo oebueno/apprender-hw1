@@ -164,22 +164,22 @@ def areaOfBookshelf():
 # print (areaOfBookshelf())
 
 # Build a tool that allows a user to convert Celsius to Fahrenheit or Fahrenheit to Celsius
-def celsiusToFahrenheit(C):
-	return ((C*1.8)+32)
-#print (celsiusToFahrenheit(30))
-def fahrenheitToCelsius(F):
-	return (F-32)*0.5556
-#print (fahrenheitToCelsius(86))
-temperatureType = raw_input("What temperature type do you want to convert to? ('F' for Fahrenheit or 'C' for Celsius) ")
-if (temperatureType == "C"):
-	celsiusDegrees = input("What's the temperature?")
-	print (celsiusToFahrenheit(celsiusDegrees))
+# def celsiusToFahrenheit(C):
+# 	return ((C*1.8)+32)
+# #print (celsiusToFahrenheit(30))
+# def fahrenheitToCelsius(F):
+# 	return (F-32)*0.5556
+# #print (fahrenheitToCelsius(86))
+# temperatureType = raw_input("What temperature type do you want to convert to? ('F' for Fahrenheit or 'C' for Celsius) ")
+# if (temperatureType == "C"):
+# 	celsiusDegrees = input("What's the temperature?")
+# 	print (celsiusToFahrenheit(celsiusDegrees))
 	
-elif (temperatureType == "F"):
-	fahrenheitDegrees = input("What's the temperature?")
-	print (fahrenheitToCelsius(fahrenheitDegrees))
-else: 
-	print('You can only choose between "C" and "F"')
+# elif (temperatureType == "F"):
+# 	fahrenheitDegrees = input("What's the temperature?")
+# 	print (fahrenheitToCelsius(fahrenheitDegrees))
+# else: 
+# 	print('You can only choose between "C" and "F"')
 
 
 # Convention vs Syntax 
@@ -190,5 +190,64 @@ else:
 
 # Convention vs Configuration
 
+
+#Data Structures
+#Array is a [Linear] collection of values of the same type (homogeneous)
+#Java
+#public int Bookpages [10] = [23, 407, 33] #of the ten spaces available you've used 3
+#zero based indexing
+#System.out.print(Bookpages[1]); #print out 407
+#Null Pointer Exception or ArrayOutBoundsException
+
+#List is a [Linear] collection of values of any type (non-homogeneous)
+#Python 
+Hello = ['hair', 37, 't', 3.14, True ]
+print (Hello)
+print (Hello[4])
+Hello[4] = "WASSSUP"
+print (Hello[4])
+# print (Hello[5]) #wont work
+Hello.append("Blitz")
+print (Hello[5]) #does work because you've appended an element to array
+
+Trello = []
+Trello.append("world")
+print (Trello[0])
+
+world = "h"
+world = 123
+# world.append("Hello") #wont work because the variable is defined as an integer not an array
+
+print (world)
+
+print ( 1 in Hello ) #False
+print ( 37 in Hello ) #true
+
+breadListByCountry = [ ['Focaccia', 'Crostini'], ['Baguette', 'Croissant'], ['Kaiser']]
+
+print (breadListByCountry[2])
+
+print (" I want the french bread : " + breadListByCountry[1][1])
+
+#Set, Map, Dictionary 
+setTest = {"hello", 12, "2", 12 } #length 3 because 12 is repeated and sets only carry unique values
+print ( setTest)
+print ( len(setTest)) 
+# print ( setTest[1]) #wont work
+print ( "hello" in setTest) 
+#dictionaries and maps are key, value Pairs
+dictionaryTest = { "hello": "world", "Student": "Laura", "hello": "Laura"}
+print ( dictionaryTest.keys())
+print (dictionaryTest["hello"])
+print ("================")
+
+
+
+counter = 1
+
+for i in Hello:
+	print (counter)
+	counter += 1
+	print (i)
 
 
