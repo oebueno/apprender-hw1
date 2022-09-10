@@ -10,3 +10,5 @@ for university in myUniversities:
     #print (university)
     print ("This is my " + str (chooseprorty) + " choise: " + university)
     chooseprorty +=1
+    for letters in university:
+        print (letters)
