@@ -1,0 +1,22 @@
+# F(n) = F(n-1) + F(n-2) 
+# Fn = 1 + 0
+# Fn = 1
+# F(n + 1) = F(n) + F(n - 1)
+# F(n + 1) = 1 + 1
+# F(n + 1) = 2
+# F(n + 2) = F(n + 1) + F(n)
+# F(n + 2) = 2 + 1 
+# F(n + 2) = 3
+
+fnminuous2 = 0
+fnminuous1 = 1
+counter = 0
+fibonacciCounter = input("how many Fibonacci numbers do you want? ")
+
+while counter != int(fibonacciCounter):
+    Fn = fnminuous1 + fnminuous2
+    counter = counter + 1
+    print (Fn)
+
+    fnminuous2 = fnminuous1
+    fnminuous1 = Fn 
